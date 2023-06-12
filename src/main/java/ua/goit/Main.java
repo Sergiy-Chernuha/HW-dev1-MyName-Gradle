@@ -1,5 +1,11 @@
-package ua.goit;public class Main {
+package ua.goit;
+
+import com.google.gson.Gson;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       Person i = new Person("Sergiy", "Chernuha");
+       String json=new Gson().toJson(i);
+        System.out.println(json);
     }
 }
